@@ -220,7 +220,7 @@ class TaskConfig:
                 elif self.upDest.startswith("u:"):
                     self.upDest = self.upDest.lstrip("u:")
                     self.userTransmission = IS_PREMIUM_USER
-            if self.upDest.isdigit() or self.upDest.startswith("-"):
+                if self.upDest.isdigit() or self.upDest.startswith("-"):
                 self.upDest = int(self.upDest)
             if self.upDest:
                 if self.userTransmission:
